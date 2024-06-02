@@ -3,7 +3,6 @@ from views.index import IndexView
 from views.question import QuestionView
 from views.simple_view import SimpleView
 
-
 def main(page: ft.Page):
   page.title = "Flet Template"
   #page.theme_mode = "light"
