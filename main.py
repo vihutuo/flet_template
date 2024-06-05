@@ -28,4 +28,4 @@ def main(page: ft.Page):
   page.go(page.route)
 
 
-ft.app(target=main, assets_dir="assets")
+ft.app(target=main, assets_dir="assets", view=ft.AppView.WEB_BROWSER)
