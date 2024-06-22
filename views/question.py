@@ -1,7 +1,6 @@
 import flet as ft
 import random
 
-
 def QuestionView(page, params):
     def letter_clicked(e):
         con_1.content.value = chr(ord(con_1.content.value) + 1)

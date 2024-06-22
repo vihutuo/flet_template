@@ -7,6 +7,10 @@ def main(page: ft.Page):
   page.title = "Flet Template"
   #page.theme_mode = "light"
   page.theme = ft.Theme(color_scheme_seed="#FFCD5758")
+  page.fonts = {
+    "Kanit": "https://raw.githubusercontent.com/google/fonts/master/ofl/kanit/Kanit-Bold.ttf",
+    "playwrite": "fonts/playwrite.ttf",
+  }
 
   def route_change(route):
     page.views.clear()
@@ -26,4 +30,4 @@ def main(page: ft.Page):
   page.on_route_change = route_change
   page.on_view_pop = view_pop
   page.go(page.route)
-ft.app(target=main, assets_dir="assets", view=ft.AppView.WEB_BROWSER)
+ft.app(target=main,  view=ft.AppView.WEB_BROWSER)

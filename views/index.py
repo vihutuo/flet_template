@@ -4,16 +4,16 @@ import flet as ft
 def IndexView(page, params):
     def CreateAppBar():
         app_bar = ft.AppBar(
-            leading=ft.Icon(ft.icons.PALETTE, color="#e45678"),
-            leading_width=40,
+           # leading=ft.Icon(ft.icons.PALETTE, color="#e45678"),
+            #leading_width=40,
             title=ft.Text("Flet Template"),
-            center_title=False,
+            #center_title=False,
             bgcolor=ft.colors.SURFACE_VARIANT,
-            actions=[
-                ft.IconButton(ft.icons.RESTART_ALT, on_click=restart_clicked),
-                ft.IconButton(ft.icons.FILTER_3),
+            #actions=[
+            #    ft.IconButton(ft.icons.RESTART_ALT, on_click=restart_clicked),
+            #    ft.IconButton(ft.icons.FILTER_3),
 
-            ],
+            #],
         )
         return app_bar
 
@@ -29,7 +29,7 @@ def IndexView(page, params):
     def btn_simple_clicked(e):
         page.go("/simple_view")
 
-    txt = ft.Text("Welocome to the Flet Template")
+    txt = ft.Text("Welcome to the Flet Template", font_family="playwrite")
     col_right = ft.Row(controls=[txt], alignment=ft.MainAxisAlignment.END)
     btn_question1 = ft.ElevatedButton("Question1", on_click=btn_question1_clicked)
     btn_question2 = ft.ElevatedButton("Question2", on_click=btn_question2_clicked)
