@@ -5,7 +5,7 @@ def IndexView(page:ft.Page, params):
         app_bar = ft.AppBar(
             leading=ft.Image("images/csc_logo_100.png"),
             leading_width=40,
-            title=ft.Text("Flet Template"),
+            title=ft.Text("My Flet Template"),
             #center_title=False,
             bgcolor=ft.colors.SURFACE_VARIANT,
             actions=[
