@@ -39,6 +39,7 @@ def IndexView(page:ft.Page, params):
     page.views.append(ft.View(
         "/",
         [appbar, col_right, btn_question1, btn_question2, btn_simple, img_1],
+        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
 
     )
     )
