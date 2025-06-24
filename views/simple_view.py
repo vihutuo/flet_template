@@ -6,7 +6,7 @@ def SimpleView(page, params):
 
     fld_name = ft.TextField(label="Enter name")
     btn_submit = ft.ElevatedButton("Submit", on_click=submit_clicked)
-    appbar = ft.AppBar(title=ft.Text("Simple View"), bgcolor=ft.colors.SURFACE_VARIANT)
+    appbar = ft.AppBar(title=ft.Text("Simple View"), bgcolor=ft.Colors.SURFACE_CONTAINER_HIGHEST)
     row1 = ft.Row(controls=[fld_name, btn_submit])
     col_1 = ft.Column()
     page.views.append(ft.View("/", [appbar, row1, col_1]))

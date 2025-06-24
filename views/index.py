@@ -7,10 +7,10 @@ def IndexView(page:ft.Page, params):
             leading_width=40,
             title=ft.Text("Flet Template"),
             #center_title=False,
-            bgcolor=ft.colors.SURFACE_VARIANT,
+            bgcolor=ft.Colors.SURFACE_CONTAINER_HIGHEST,
             actions=[
-                ft.IconButton(ft.icons.RESTART_ALT, on_click=restart_clicked),
-                ft.IconButton(ft.icons.FILTER_3),
+                ft.IconButton(ft.Icons.RESTART_ALT, on_click=restart_clicked),
+                ft.IconButton(ft.Icons.FILTER_3),
 
             ],
         )

@@ -13,14 +13,14 @@ def QuestionView(page, params):
     btn = ft.ElevatedButton("Home", on_click=lambda _: page.go("/"))
     appbar = ft.AppBar(
         title=ft.Text("Question"),
-        bgcolor=ft.colors.SURFACE_VARIANT
+        bgcolor=ft.Colors.SURFACE_CONTAINER_HIGHEST
     )
 
     txt_letter1 = ft.Text("A", text_align=ft.TextAlign.CENTER, size=22)
 
     con_1 = ft.Container(
         content=txt_letter1,
-        border=ft.border.all(2, ft.colors.AMBER_800),
+        border=ft.border.all(2, ft.Colors.AMBER_800),
         width=35,
         height=35,
         bgcolor="#FFEDBAC2",
